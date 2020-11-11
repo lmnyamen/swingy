@@ -85,7 +85,7 @@ public class GUI extends JFrame {
         panelMain.setLayout(new BorderLayout());
         //initialise components
         initialise(this);
-        System.out.println("Welcome to 42 Heaven (Or Hell)!!!!!!!");
+        System.out.println("Welcome to swingy!!!!!!!");
         begin(this);
         this.setVisible(true);
     }
@@ -123,7 +123,7 @@ public class GUI extends JFrame {
         ((FlowLayout)panelMap.getLayout()).setVgap(0);
 
         //Reading Image Files::  BufferedImage img = ImageIO.read(url);
-        BufferedImage mainImage = controller.ImageException.imageUpload("src/main/java/view/images/game.jfif");
+        BufferedImage mainImage = controller.ImageException.imageUpload("swingy-main/src/main/java/view/images/game.jpg");
         //Images To Be Used
         Image scaledImage = mainImage.getScaledInstance(window.getWidth() / 2, window.getHeight(), Image.SCALE_DEFAULT);
         picLabel = new JLabel(new ImageIcon(scaledImage));
